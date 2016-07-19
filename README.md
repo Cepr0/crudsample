@@ -15,15 +15,15 @@
  - [Spring Data JPA CRUD with Vaadin](https://github.com/mstahv/spring-data-vaadin-crud#spring-data-jpa-crud-with-vaadin)
  - [Spring Boot Sample Data JPA](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-data-jpa)
    
- ### База Данных
- Приложение работает с БД MySQL:
- ```
- Адрес БД: mysql://localhost:3306/test?useSSL=false
- Логин/пароль: root
- Схема: test
- Таблица: user
- ```
-Приложение протестировано со следующей структурой таблицы **user**:
+### База Данных
+Приложение работает с БД MySQL:
+```
+Адрес БД: mysql://localhost:3306/test?useSSL=false
+Логин/пароль: root
+Схема: test
+Таблица: user
+```
+Протестировано со следующей структурой таблицы **user**:
 ```MySQL
  CREATE TABLE `user` (
    `id` int(8) NOT NULL AUTO_INCREMENT,
@@ -35,9 +35,8 @@
   KEY `date` (`createDate`)
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
-
 ###Запуск приложения
-Установите установленные [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [Maven](https://maven.apache.org/), [Git](https://git-scm.com/) и [MySQL](http://dev.mysql.com/downloads/mysql/) </br>
+Установите [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [Maven](https://maven.apache.org/), [Git](https://git-scm.com/) и [MySQL](http://dev.mysql.com/downloads/mysql/) </br>
 Во время установки MySQL укажите логин и пароль **root**. Создайте схему **test** и таблицу **user** как указано выше.  </br>
 
 Для запуска приложения выполните в рабочей директории следующие команды:
