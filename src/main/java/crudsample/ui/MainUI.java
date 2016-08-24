@@ -24,6 +24,7 @@ import org.vaadin.viritin.layouts.MHorizontalLayout;
 import org.vaadin.viritin.layouts.MVerticalLayout;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Cepro on 15.07.2016.
@@ -105,6 +106,10 @@ public class MainUI extends UI {
                 userTable).expand(userTable);
 
         setContent(mainLayout);
+
+        Locale locale = new Locale("ru");
+        this.setLocale(locale);
+        this.getSession().setLocale(locale);
 
         addShortcutListener(new ShortcutListener("Escape", ShortcutAction.KeyCode.ESCAPE, null) {
             @Override
