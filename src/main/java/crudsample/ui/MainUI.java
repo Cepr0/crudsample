@@ -7,6 +7,7 @@ import com.vaadin.event.ShortcutAction;
 import com.vaadin.event.ShortcutListener;
 import com.vaadin.server.ExternalResource;
 import com.vaadin.server.FontAwesome;
+import com.vaadin.server.ThemeResource;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.*;
@@ -49,13 +50,15 @@ public class MainUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-        //userTable.setColumnExpandRatio("name", 1);
 
         // JavaRush Logo
         Link javaRushLogo = new Link(null, new ExternalResource("http://javarush.ru"));
         javaRushLogo.setTargetName("_new");
         javaRushLogo.setDescription("JavaRush — онлайн-курс обучения программированию на Java");
-        javaRushLogo.setIcon(new ExternalResource("http://javarush.ru/images/main.2/javarush_logo.png"));
+        //javaRushLogo.setIcon(new ExternalResource("http://javarush.ru/images/main.2/javarush_logo.png"));
+        //javaRushLogo.setIcon(new FileResource(new File(VaadinService.getCurrent()
+        //        .getBaseDirectory().getAbsolutePath() + "/crudsample/javarush_logo.png")));
+        javaRushLogo.setIcon(new ThemeResource("javarush_logo.png"));
 
         // Welcome text
         RichText welcomeText = new RichText().withMarkDownResource("/welcome.md");
