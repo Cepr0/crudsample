@@ -1,9 +1,8 @@
 # CRUD sample
-##Тестовое задание для [JavaRush](http://javarush.ru) </br>
+## Вступительное задание для [Java Online Projects](http://javaops.ru/) по курсу [JavaRush](https://javarush.ru/) </br>
 Реализация простого [CRUD](https://ru.wikipedia.org/wiki/CRUD) Web приложения
 
-![CRUD sample screenshot][screenshot]
-[screenshot]: https://github.com/Cepr0/crudsample/blob/master/crudsample.png "CRUD sample screenshot" 
+![CRUD sample screenshot](crudsample.png)
 
 ### Использованные технологии
  - [Spring Boot](http://projects.spring.io/spring-boot/)
@@ -15,7 +14,7 @@
  - [Spring Data JPA CRUD with Vaadin](https://github.com/mstahv/spring-data-vaadin-crud#spring-data-jpa-crud-with-vaadin)
  - [Spring Boot Sample Data JPA](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-data-jpa)
    
-###Установка приложения
+### Установка приложения
 Установить на компьютер [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), [Maven](https://maven.apache.org/), [Git](https://git-scm.com/) и [MySQL](http://dev.mysql.com/downloads/mysql/).</br>
 В базе данных создать таблицу **user**:
 ```MySQL
@@ -39,7 +38,7 @@ DATASOURCE_PASSWORD - Пароль к БД
 Пример: root
 ```
 
-###Запуск приложения
+### Запуск приложения
 Выполнить в рабочей директории команды:
 ```
 git clone https://github.com/Cepr0/crudsample.git
@@ -48,5 +47,5 @@ mvn spring-boot:run
 ```
 Открыть приложение в браузере по адресу: [http://localhost:8080/](http://localhost:8080/)
 
-###Live demo
+### Live demo
 [http://crudsample.herokuapp.com/](http://crudsample.herokuapp.com/)
